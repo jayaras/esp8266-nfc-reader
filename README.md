@@ -7,13 +7,17 @@ You need the Arduino development environment for this. Plus the PM532 lib from h
 
 ## Tested and working hardware
 * NodeMCU Board https://amzn.to/2SZWLJ6
-* NCP PM532 Breakout https://amzn.to/2VXHtGX
+* NXP PM532 Breakout https://amzn.to/2VXHtGX
 
 ## Todo
 * Thinking of adding some feedback mechanism such as haptic, neopixel or led options.
-* Need to publish the glue between this code and sonos.
+* ~~~Need to publish the glue between this code and sonos. 
 * come up with some example automations for Home Asssistant for fun.
 * photo/video of the final build (wood enclosure with wood sound blocks).
+
+## Sonos Controller
+https://github.com/jayaras/sonos-agent
+
 
 ## Home Assistant Exmaple
 Binary sensor from a card being present or not.
@@ -23,4 +27,5 @@ binary_sensor:
     state_topic: "homie/rfid-reader/present"
     payload_on: "true"
     payload_off: "true"
+    availability_topic: "homie/rfid-reader/$online"
 ```
