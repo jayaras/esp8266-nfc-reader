@@ -14,3 +14,13 @@ You need the Arduino development environment for this. Plus the PM532 lib from h
 * Need to publish the glue between this code and sonos.
 * come up with some example automations for Home Asssistant for fun.
 * photo/video of the final build (wood enclosure with wood sound blocks).
+
+## Home Assistant Exmaple
+Binary sensor from a card being present or not.
+```yaml
+binary_sensor:
+  - platform: mqtt
+    state_topic: "homie/rfid-reader/present"
+    payload_on: "true"
+    payload_off: "true"
+```
