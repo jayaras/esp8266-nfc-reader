@@ -6,7 +6,8 @@ This was originally written with inspiration from https://shawnrk.github.io/song
 You need the Arduino development environment for this. Plus the PM532 lib from https://github.com/Seeed-Studio/PN532. Apparently the Adafruit flavor of the PM532 lib does not support i2c on esp8266 so we have to jump through a couple hoops to make this go.
 
 ## Tested and working hardware
-* NodeMCU Board
+* NodeMCU Board https://amzn.to/2SZWLJ6
+* NCP PM532 Breakout https://amzn.to/2VXHtGX
 
 ## Todo
 * Thinking of adding some feedback mechanism such as haptic, neopixel or led options.
