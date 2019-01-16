@@ -11,11 +11,12 @@ You need the Arduino development environment for this. Plus the PM532 lib from h
 
 ## Todo
 * Thinking of adding some feedback mechanism such as haptic, neopixel or led options.
-* ~~~Need to publish the glue between this code and sonos. 
+* ~~Need to publish the glue between this code and sonos. ~~
 * come up with some example automations for Home Asssistant for fun.
 * photo/video of the final build (wood enclosure with wood sound blocks).
 
-## Sonos Controller
+## Sonos Controller 
+Assign a song to each tag/card/whatever.
 https://github.com/jayaras/sonos-agent
 
 
