@@ -92,6 +92,8 @@ void cardReaderSetup() {
 
 
 void setup() {
+  Serial.begin(115200);
+  Serial << endl << endl;
   Homie_setFirmware("nfc-reader", "1.2.0");
 
   Homie.setSetupFunction(cardReaderSetup);
