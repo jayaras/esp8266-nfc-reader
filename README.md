@@ -8,17 +8,29 @@ You need the Arduino development environment for this. Plus the PM532 lib from h
 ## Tested and working hardware
 * NodeMCU Board https://amzn.to/2SZWLJ6
 * NXP PM532 Breakout https://amzn.to/2VXHtGX
+* itead NXP PM532 Breakout https://amzn.to/2sx4H9b
 
 ## Todo
 * Thinking of adding some feedback mechanism such as haptic, neopixel or led options.
-* ~~Need to publish the glue between this code and sonos. ~~
+* <strike>Need to publish the glue between this code and sonos.</strike>
 * come up with some example automations for Home Asssistant for fun.
 * photo/video of the final build (wood enclosure with wood sound blocks).
+
+
+## MQTT Messages after touching and removing a translink.ca Compass card.
+```
+
+homie/legacy-songblock/rfid/uid 04905042763f80
+homie/legacy-songblock/rfid/present true
+homie/legacy-songblock/rfid/uid (null)
+homie/legacy-songblock/rfid/present false
+homie/legacy-songblock/rfid/previous_uid 04905042763f80
+
+```
 
 ## Sonos Controller 
 Assign a song to each tag/card/whatever.
 https://github.com/jayaras/sonos-agent
-
 
 ## Home Assistant Exmaple
 Binary sensor from a card being present or not.
