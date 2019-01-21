@@ -7,8 +7,10 @@ You need the Arduino development environment for this. Plus the PM532 lib from h
 
 ## Tested and working hardware
 * NodeMCU Board https://amzn.to/2SZWLJ6
-* NXP PM532 Breakout https://amzn.to/2VXHtGX
-* itead NXP PM532 Breakout https://amzn.to/2sx4H9b
+* NXP PN532 Breakout https://amzn.to/2VXHtGX
+* itead NXP PN532 Breakout https://amzn.to/2sx4H9b
+* Asiawill NXP PN532 Breakout https://amzn.to/2DqefsP
+
 
 ## Todo
 * Thinking of adding some feedback mechanism such as haptic, neopixel or led options.
