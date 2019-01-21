@@ -13,7 +13,7 @@ You need the Arduino development environment for this. Plus the PM532 lib from h
 ## Todo
 * Thinking of adding some feedback mechanism such as haptic, neopixel or led options.
 * <strike>Need to publish the glue between this code and sonos.</strike>
-* come up with some example automations for Home Asssistant for fun.
+* <strike>come up with some example automations for Home Asssistant for fun.</strike>
 * photo/video of the final build (wood enclosure with wood sound blocks).
 
 
@@ -32,13 +32,28 @@ homie/legacy-songblock/rfid/previous_uid 04905042763f80
 Assign a song to each tag/card/whatever.
 https://github.com/jayaras/sonos-agent
 
-## Home Assistant Exmaple
+## Home Assistant Exmaples
 Binary sensor from a card being present or not.
 ```yaml
 binary_sensor:
   - platform: mqtt
-    state_topic: "homie/rfid-reader/present"
+    state_topic: "homie/rfid-reader/rfid/present"
     payload_on: "true"
     payload_off: "true"
     availability_topic: "homie/rfid-reader/$online"
+```
+
+Unlock your door with a specific uid from a card. (This begs for a proper MQTT RFID Device so you could look up based on a user).
+```yaml
+alias: "rfid unlcok front oor"
+trigger:
+  - platform: mqtt
+    topic: "homie/rfid-reader/rfid/uid"
+    payload: "04905042763f80"
+action:
+  service: lock.unlock
+  data:
+    entity_id: lock.front_door_2
+
+
 ```
