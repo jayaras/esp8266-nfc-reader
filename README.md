@@ -45,7 +45,7 @@ binary_sensor:
 
 Unlock your door with a specific uid from a card. (This begs for a proper MQTT RFID Device so you could look up based on a user).
 ```yaml
-alias: "rfid unlcok front oor"
+alias: "rfid unlcok front door"
 trigger:
   - platform: mqtt
     topic: "homie/rfid-reader/rfid/uid"
